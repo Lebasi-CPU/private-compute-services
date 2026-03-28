@@ -1,0 +1,88 @@
+# ═══════════════════════════════════════════════════════════════
+# 🛡️  SISTEMA VANGUARDIA HANDLER
+# 📊 CLASIFICACIÓN: NIVEL SS [SUPER-SPECIAL]
+# 🏛️  PROPIEDAD: PME SINALOA - PERITOS
+# ═══════════════════════════════════════════════════════════════
+
+.PHONY: ss-init ss-link ss-deepscan ss-extract ss-bypass ss-report
+
+# Colores Especiales Nivel SS
+GOLD := \033[1;33m
+RED := \033[1;31m
+BLUE := \033[1;34m
+WHITE := \033[1;37m
+NC := \033[0m
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# 🚀 INICIALIZACIÓN DEL SISTEMA VANGUARDIA
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ss-init:
+	@clear
+	@echo "$(GOLD)╔═══════════════════════════════════════════════════════════════╗$(NC)"
+	@echo "$(GOLD)║           V A N G U A R D I A   H A N D L E R               ║$(NC)"
+	@echo "$(GOLD)║                   N I V E L   S S   A C T I V O               ║$(NC)"
+	@echo "$(GOLD)╚═══════════════════════════════════════════════════════════════╝$(NC)"
+	@echo "$(WHITE)🔐 ACCESO PERMITIDO: PME SINALOA$(NC)"
+	@echo "$(BLUE)⚡ PROTOCOLOS DE ALTA SEGURIDAD CARGADOS...$(NC)"
+	@sleep 1
+	@echo "$(GREEN)✅ SISTEMA VANGUARDIA LISTO PARA OPERACIONES.$(NC)"
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# 📡 ENLACE REMOTO NIVEL SS
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ss-link:
+	@echo "$(BLUE)📡 ESTABLECIENDO ENLACE CRIPTOGRAFADO...$(NC)"
+	@echo "$(YELLOW)🔗 Conectando con dispositivo objetivo...$(NC)"
+	@curl -X POST http://localhost:8000/vanguard/connect -H "X-Auth: SS-PME-SINALOA"
+	@echo "$(GOLD)✅ ENLACE SS ESTABLECIDO. CANAL SEGURO ACTIVO.$(NC)"
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# 🔍 ESCANEO PROFUNDO [MODO VANGUARDIA]
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ss-deepscan:
+	@echo "$(RED)🔍 INICIANDO ESCANEO VANGUARDIA - NIVEL MAXIMO...$(NC)"
+	@echo "$(YELLOW)📂 Analizando memoria, particiones y registros ocultos...$(NC)"
+	@curl -s http://localhost:8000/vanguard/scan | jq '.data'
+	@echo "$(GOLD)✅ MAPEO COMPLETO REALIZADO. DATOS CLASIFICADOS.$(NC)"
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# 💾 EXTRACCIÓN FORENSE AVANZADA
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ss-extract:
+	@echo "$(RED)💾 EJECUTANDO MÓDULO DE EXTRACCIÓN SS...$(NC)"
+	@echo "$(YELLOW)⏳ Recuperando información sensible y metadatos...$(NC)"
+	@curl -X POST http://localhost:8000/vanguard/extract \
+	  -d '{"case":"$(CASO)","level":"SS","unit":"PME_SINALOA"}'
+	@echo "$(GOLD)✅ EVIDENCIA ADQUIRIDA. HASH SHA-256 Y SHA-3 GENERADOS.$(NC)"
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# 🔓 BYPASS DE SEGURIDAD [MODO PERITO]
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ss-bypass:
+	@echo "$(BLUE)🔓 ACTIVANDO PROTOCOLO DE ACCESO VANGUARDIA...$(NC)"
+	@echo "$(YELLOW)🔧 Eliminando restricciones de sistema...$(NC)"
+	@curl -X POST http://localhost:8000/vanguard/bypass
+	@echo "$(GOLD)✅ ACCESO TOTAL CONCEDIDO. MODO ADMINISTRADOR.$(NC)"
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# 📄 REPORTE PERICIAL OFICIAL
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ss-report:
+	@echo "$(WHITE)📊 GENERANDO DICTAMEN TÉCNICO NIVEL SS...$(NC)"
+	@echo "$(YELLOW)📝 Formateando documento legal y técnico...$(NC)"
+	@curl -X GET http://localhost:8000/vanguard/report/$(CASO)
+	@echo "$(GOLD)✅ REPORTE FINALIZADO. LISTO PARA FIRMA Y CADENA DE CUSTODIA.$(NC)"
+
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# 📱 INTERFAZ MÓVIL VANGUARDIA
+# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+ss-mobile:
+	@echo "$(GOLD)📲 CARGANDO INTERFAZ TÁCTICA VANGUARDIA...$(NC)"
+	@echo "$(WHITE)=========================================$(NC)"
+	@echo "$(WHITE)🔹 SISTEMA: VANGUARDIA HANDLER"
+	@echo "$(WHITE)🔹 NIVEL: SS [SUPER-SPECIAL]"
+	@echo "$(WHITE)🔹 UNIDAD: PME SINALOA"
+	@echo "$(WHITE)🔹 ESTADO: OPERATIVO"
+	@echo "$(WHITE)=========================================$(NC)"
+	@echo "$(BLUE)👉 ACCESO MÓVIL: https://mesh.maya.local/vanguard$(NC)"
+	@echo "$(RED)🔑 CLAVE DE ACCESO: AUTORIZACIÓN PERICIAL$(NC)"
